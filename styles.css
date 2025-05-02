@@ -1,0 +1,61 @@
+body{
+    background-image: url(img/unnamed.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+header{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+    font-size: 36px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.campeon{
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition:  0.3s ease;
+    text-align: center;
+}
+
+.campeon img{
+    width: 100%;
+    height: auto;
+}
+
+.campeon h2{
+    margin: 0;
+    padding: 10px;
+}
+
+.campeon:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    cursor: pointer;
+}
+
+.campeon a{
+    text-decoration: none;
+}
+
+.campeon a:visited{
+    text-decoration: none;
+    color: black;
+}
+
