@@ -1,61 +1,64 @@
-body{
-    background-image: url(img/unnamed.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-header{
-    margin-bottom: 20px;
-    text-align: center;
+body {
+  background-image: url(img/unnamed.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 16px;
+  font-family: system-ui, sans-serif;
 }
 
-header h1{
-    color: white;
-    font-size: 36px;
+.header {
+  max-width: 100%;
+  padding: 1rem;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.header h1 {
+  font-size: 3em;
+  color: #efefef;
+  border-bottom: 1px solid #efefef;
 }
 
-.campeon{
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition:  0.3s ease;
-    text-align: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.campeon img{
-    width: 100%;
-    height: auto;
+.campeon {
+  margin: 1rem;
+  padding: 0.5rem;
+  background: rgba(16, 44, 89, 0.5);
+  text-align: center;
+  border-bottom: 1px solid #000;
 }
 
-.campeon h2{
-    margin: 0;
-    padding: 10px;
+.campeon img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0 0 1rem 0;
+  border: 1px solid rgba(16, 44, 89);
 }
 
-.campeon:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-    cursor: pointer;
+.campeon a {
+  color: #fff;
+  text-decoration: none;
 }
 
-.campeon a{
-    text-decoration: none;
+.campeon a:visited {
+  color: #fff;
 }
 
-.campeon a:visited{
-    text-decoration: none;
-    color: black;
+.campeon h2 {
+  font-size: 2em;
 }
 
